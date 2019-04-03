@@ -1,0 +1,16 @@
+
+---
+ - hosts: control
+   become: true
+   tasks:
+   - name: install git
+     apt: name=git state=present update_cache=yes
+
+   - name: clone a repo
+     git:
+      repo: https://github.com/ejson03/Ansible-Application 
+      dest: ./Application
+      clone: yes
+
+   
+
