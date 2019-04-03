@@ -1,0 +1,17 @@
+
+
+- name: copy yolo directory 
+  copy: src=yolo dest=/home/wagner/Desktop
+
+- name: Check yolo.py
+  stat: path=/home/wagner/Desktop/yolo/yolo.py
+  register: yolo
+
+
+
+- name: Object detection using YOLO
+  script: /home/wagner/Desktop/yolo/yolo.py --image {{my_image}} --yolo yolo-coco 
+  args:
+   executable: python
+   chdir: /home/wagner/Desktop/yolo
+  when: yolo.stat.exists == True

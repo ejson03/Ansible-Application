@@ -1,0 +1,14 @@
+---
+
+- hosts: control
+
+  vars:
+   my_image: "{{ image}}"
+   
+  roles:
+  - pip_modules
+  - YOLO
+
+
+
+
