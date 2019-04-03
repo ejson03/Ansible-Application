@@ -10,7 +10,7 @@
 
 
 - name: Object detection using YOLO
-  script: /home/wagner/Desktop/yolo/yolo.py --image {{my_image}} --yolo yolo-coco 
+  script: /home/wagner/Desktop/yolo/yolo.py --image {{my_image}} --yolo /home/sarvesh/Desktop/yolo-coco 
   args:
    executable: python
    chdir: /home/wagner/Desktop/yolo
