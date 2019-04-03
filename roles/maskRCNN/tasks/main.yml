@@ -11,7 +11,7 @@
 
 - name: Object detection using mask_rcnn
   when: mask_rcnn.stat.exists == True
-  script: /home/wagner/Desktop/mask_rcnn/mask_rcnn.py --image {{my_image}} --mask-rcnn mask-rcnn-coco 
+  script: /home/wagner/Desktop/mask_rcnn/mask_rcnn.py --image {{my_image}} --mask-rcnn /home/sarvesh/Desktop/mask-rcnn-coco 
   args:
    executable: python
    chdir: /home/wagner/Desktop/mask_rcnn
