@@ -1,0 +1,16 @@
+
+- name: Enable site 1 for testing
+  hosts: webserver
+  become: true
+  
+  roles:
+  - webtest
+
+- name: enable site 2 for testing
+  hosts: database
+  become: true
+  
+  roles:
+  - webtest2
+
+
