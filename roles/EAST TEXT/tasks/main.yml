@@ -10,7 +10,7 @@
 
 
 - name: Object detection using text_detection
-  script: /home/wagner/Desktop/text_detection/text_detection.py --image {{my_image}} --east frozen_east_text_detection.pb
+  script: /home/wagner/Desktop/text_detection/text_detection.py --image {{my_image}} --east /home/sarvesh/Desktop/frozen_east_text_detection.pb
   args:
    executable: python
    chdir: /home/wagner/Desktop/text_detection
