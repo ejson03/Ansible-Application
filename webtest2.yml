@@ -1,0 +1,10 @@
+---
+
+- hosts: control
+   
+  roles:
+  - webtest2
+
+
+
+
