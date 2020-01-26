@@ -51,11 +51,11 @@
      - name: install apache modules
        apache2_module:name={{item}} state=present update-cache=yes
          with_items:
-		- headers
-		- env
-		- dir
-		- mime
-		- unique_id
+                - headers
+                - env
+                - dir
+                - mime
+                - unique_id
      
      - name: Create 'owncloud' Database
       mysql_db:
