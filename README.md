@@ -12,11 +12,11 @@ Collection of ansible playbooks for automating project deployment
 
 # Description
 
-Ansible solves the problem for efficient distribution of projects developed. The playbooks can be used to generate an environment suitable for the application to be deployed into. Also project distributiona nd control can be efficiently managed in multi nodal enviornment. Distribution of loads across nodes enhances the overall performance of the application.
+Ansible solves the problem for efficient distribution of projects developed. The playbooks can be used to generate an environment suitable for the application to be deployed into. Also project distribution and control can be efficiently managed in multi nodal enviornment. Distribution of loads across nodes enhances the overall performance of the application.
 
 This repository involves playbooks for :
 * LAMP Stack Flask WebApp
-* Owncloud Setuo 
+* Owncloud Setup
 * Deploying Computer Vision Models
 
 # Dependencies
@@ -32,7 +32,7 @@ This repository involves playbooks for :
 
 Ansible can only run on Linux Distributed Operating Systems
 
-If you already possess either of the above operating system platofrms you can skip the below procedure
+If you already possess either of the above operating system platforms you can skip the below procedure
 
 * Setup Vagrant Environment
   1. Install Vagrant and virtualbox
