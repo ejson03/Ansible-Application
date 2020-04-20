@@ -1,5 +1,5 @@
 # Ansible-Application
-Devops tool to deploy machine learning models in suitable linux environment
+Collection of ansible playbooks for automating project deployment
 
 # Table of Contents
 
@@ -12,21 +12,43 @@ Devops tool to deploy machine learning models in suitable linux environment
 
 # Description
 
-The problem Deploying Machine Learning using Ansible solves is that it creates an environment and automates the process of deploying an api, web service and machine learning model for production.
+Ansible solves the problem for efficient distribution of projects developed. The playbooks can be used to generate an environment suitable for the application to be deployed into. Also project distributiona nd control can be efficiently managed in multi nodal enviornment. Distribution of loads across nodes enhances the overall performance of the application.
+
+This repository involves playbooks for :
+* LAMP Stack Flask WebApp
+* Owncloud Setuo 
+* Deploying Computer Vision Models
 
 # Dependencies
 
 * [Ansible](https://www.ansible.com/)
+* [Vagrant](https://www.vagrantup.com/)
+* [Python](https://www.python.org/)
+* [VirtualBox](https://www.virtualbox.org/)
 
 # Installation
 
 ### Prerequisites
 
-TBD
+Ansible can only run on Linux Distributed Operating Systems
+
+If you already possess either of the above operating system platofrms you can skip the below procedure
+
+* Setup Vagrant Environment
+  1. Install Vagrant and virtualbox
+  2. [Vagrantfile](https://github.com/ejson03/Ansible-Application/blob/master/Vagrantfile) use this vagrantfile to setup your virtual            machine
+  ```
+  vagrant up [hostname]  Enable all virtual machines or specify any one to enable
+  vagrant ssh hostname
+  ```
 
 ### Instructions
 
-TBD
+1. Setup Ansible hosts in /etc/ansible/hosts
+2. Setup Ansible config in /etc/ansible/ansible.cfg
+```
+ansible-playbook all <play-name>
+```
 
 # License
 
