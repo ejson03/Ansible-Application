@@ -18,6 +18,7 @@ This repository involves playbooks for :
 * LAMP Stack Flask WebApp
 * Owncloud Setup
 * Deploying Computer Vision Models
+* [BigchainDB Network Setup](https://github.com/ejson03/bigchaindb-network-setup)
 
 # Dependencies
 
