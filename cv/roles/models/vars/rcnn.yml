@@ -1,0 +1,5 @@
+--- 
+
+root_folder: "{{ path }}/rcnn"
+file: "{{ root_folder }}/mask_rcnn.py"
+command:  "{{ file }} --image {{ image }} --mask-rcnn {{ root_folder }}/mask-rcnn-coco "

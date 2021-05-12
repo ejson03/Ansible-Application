@@ -1,0 +1,22 @@
+---
+
+- hosts: all
+  gather_facts: false
+   
+  tasks: 
+    - name: Run pip modules role
+      include_role:
+        name: pip_modules
+
+    - name: Run role for {{ function }}
+      include_role:
+        name: models
+      vars:
+        image: "{{ image }}"
+        function: "{{ function }}"
+        path: "{{ path }}"
+
+
+
+
+

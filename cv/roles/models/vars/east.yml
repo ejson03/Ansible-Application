@@ -1,0 +1,5 @@
+--- 
+
+root_folder: "{{ path }}/east"
+file: "{{ root_folder }}/text_detection.py"
+command:  "{{ file }} --image {{ image }} --east {{ root_folder }}/frozen_east_text_detection.pb"

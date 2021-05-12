@@ -1,0 +1,5 @@
+--- 
+
+root_folder: "{{ path }}/yolo"
+file: "{{ root_folder }}/yolo.py"
+command:  "{{ file }} --image {{ image }} --yolo {{ root_folder }}/yolo-coco"

@@ -1,0 +1,22 @@
+
+- name: Include vars for {{ function }}
+  include_vars:
+    file: "{{ function }}.yml"
+
+- name: copy {{ function }} directory 
+  copy: 
+    src: "{{ function }}"
+    dest: "{{ path }}"
+
+- name: Check {{ function }}.py
+  stat: path="{{ file }}"
+  register: test
+
+- name: Object detection using {{ function }}
+  script: "{{ command }}"
+  args:
+   executable: python3
+   chdir: "{{ root_folder }}"
+  when: test.stat.exists == True
+
+
